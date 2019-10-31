@@ -1,0 +1,304 @@
+body {
+    font:15px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+}
+
+
+/*Global*/
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height:38px;
+    background:#ff6a00;
+    border:none;
+	border-radius: 2px;
+    padding-left:20px;
+    padding-right:20px;
+    color:#ffffff;
+}
+
+button.button_1:hover {
+	background-color:#fc8332;
+}
+.highlight {
+	color:#ff6a00;
+}
+
+h1 {
+	font-size:2em;
+}
+
+/*Header */
+header {
+    background: #2f3e46;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header #branding{
+    float:left;
+
+}
+
+header #branding h1{
+    margin:0;
+}
+/*nav bar*/
+
+nav a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:16px;
+	background-color: #2f3e46;
+}
+
+a.current {
+	color:#ff6a00;
+}
+
+nav {
+	background-color: #2f3e46;
+	text-align: right;
+	width:100%;
+	border-bottom: solid 2px #ff6a00;
+}
+
+nav li {
+	display:inline-block;
+	padding: 0px 10px;
+}
+
+
+.dropdown {
+	display:none;
+}
+
+.dropbtn1 {
+  color: white;
+  font-size: 16px;
+}
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content1 a {
+  color: white;
+  padding: 4px 20px;
+  text-decoration: none;
+  text-align:left;
+  display: block;
+  background-color:#2f3e46;
+  border-bottom:solid 2px #ff6a00;
+}
+
+.dropdown-content1 a:hover {background-color: #a4a4a4}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+
+
+/* Showcase */
+
+#showcase {
+    height: 400px;
+    background: url("../img/showcase.png") no-repeat;
+	background-size: cover;
+    color: #ffffff;
+    text-align: center;
+	box-sizing:border-box;
+}
+
+#showcase h1 {
+    margin-top: 5;
+    margin-bottom: 5;
+    font-size: 50px;
+}
+
+#showcase p{
+    font-size:20px;
+	color:#ffffff;
+}
+
+/* Newsletter */
+
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #2f3e46;
+	border-top:solid 2px #ff6a00;
+	border-bottom:solid 2px #ff6a00;
+}
+
+#newsletter h3{
+    float:left;
+    padding: 0px;
+}
+
+#newsletter form {
+    float:right;
+    padding:0px; 	
+}
+
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+
+/* Boxes */
+
+* {
+  box-sizing: border-box;
+}
+
+#boxes {
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#boxes .box{
+    float:left;
+    width:33.33%;
+    text-align: center;
+	padding: 0% 5%;
+	
+}
+
+#boxes .box img{
+    width:90px;
+	
+}
+/* footer */
+footer {
+	background-color:#ff6a00;
+	padding: 20px;
+	text-align:center;
+	border-top: solid 2px #2f3e46;
+}
+footer p {
+	display:inline;
+	padding:0px 10px;
+}
+
+/* At Ipad width */
+
+@media screen and (max-width: 900px){
+#showcase h1 {
+    margin-top: 10;
+    margin-bottom: 10;
+    font-size: 35px;
+}
+}	
+
+/* At Iphone width */
+
+@media screen and (max-width: 600px){
+ /*navigation menu settings */
+nav {
+    display:none;    
+}
+
+div.dropdown {
+	background-color:#2f3e46;
+	width:100%;
+	border-bottom: solid 2px #ff6a00;
+}
+.dropbtn {
+  background-color: #949494;
+  color: white;
+  padding: 1px 22px;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 3px;
+  margin-left:10%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 4px 20px;
+  text-decoration: none;
+  text-align:left;
+  display: block;
+  background-color:#2f3e46;
+  border-bottom:solid 2px #ff6a00;
+}
+
+.dropdown-content a:hover {background-color: #a4a4a4}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ff6a00;
+}
+
+/*showcase settings or stuff in the picture*/
+
+#showcase h1 {
+    margin-top: 5;
+    margin-bottom: 5;
+    font-size: 25px;
+}
+
+/*boxes*/
+
+  #boxes .box {
+    width: 100%;
+	float: none;
+	text-align: center;
+  }
+  
+  /*footer*/
+  
+  footer p {
+	  display:block;
+}
+}
+
