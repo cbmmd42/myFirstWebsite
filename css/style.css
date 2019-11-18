@@ -10,6 +10,7 @@ body {
     width:80%;
     margin:auto;
     overflow:hidden;
+
 }
 
 
@@ -302,3 +303,13 @@ div.dropdown {
 }
 }
 
+.appbtn {
+  display: block;
+  background-color:#ff6a00;
+  border:solid 2px #2f3e46;
+  margin: 2px;
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+
+}
