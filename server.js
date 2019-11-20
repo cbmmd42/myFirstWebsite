@@ -5,9 +5,9 @@ var app = express();
 
 var connection = mysql.createConnection({
     host: 'localhost',
-    user: 'quizclient',
-    password: 'quizauth',
-    database: 'quizquestionsdb'
+    user: 'submitform',
+    password: 'submitauth',
+    database: 'emails'
 });
 
 connection.connect(function(error) {
