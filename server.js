@@ -23,7 +23,8 @@ app.use('/', express.static('.'));
 app.use(express.urlencoded());
 
 app.post('/submit-email', (req,res) => {
-	connection.query("SELECT questions.ID, questions.question FROM questions ", 
+	var subemail = req.body.email;
+	connection.query(`INSERT INTO submittedemails ( id, email ) VALUES ( null, ${subemail.toString()} ); `, 
     (error,results,fields) => {
         if(!!error){
             console.log('Error in the query');
