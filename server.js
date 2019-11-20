@@ -24,6 +24,7 @@ app.use(express.urlencoded());
 
 app.post('/submit-email', (req,res) => {
 	var subemail = req.body.email;
+<<<<<<< HEAD
 	connection.query("INSERT INTO `emails` (email) VALUES (?)", subemail.toString(), 
     (error,results,fields) => {
         if(!!error){
@@ -35,6 +36,10 @@ app.post('/submit-email', (req,res) => {
         }
         
     });
+=======
+	var sql = `INSERT INTO submittedemails ( id, email ) VALUES ( null, ${subemail.toString()} );`
+	console.log(sql);
+>>>>>>> cabc6e15bfbdd7ed21a8fbf0fcf0b7093e43abe0
 });
 
 
