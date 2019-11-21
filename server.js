@@ -31,7 +31,7 @@ app.post('/submit-email', (req,res) => {
 	connection.query(sql, function (err, result) {
     if (err) throw err;
     console.log("1 record inserted");
-    res.send(`message sent!`);
+    res.send('message sent!');
   });
 });
 
