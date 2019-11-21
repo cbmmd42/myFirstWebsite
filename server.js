@@ -24,13 +24,14 @@ app.use(express.urlencoded());
 
 app.post('/submit-email', (req,res) => {
 	var subemail = req.body.email;
+	var subcontent = req.body.content;
 
-	var sql = `INSERT INTO submittedemails ( id, email ) VALUES ( null, '${subemail.toString()}' );`
+	var sql = `INSERT INTO submittedemails ( id, email,content ) VALUES ( null, '${subemail.toString()}', '${subcontent.toString()}' );`
 	console.log(sql);
 	connection.query(sql, function (err, result) {
     if (err) throw err;
     console.log("1 record inserted");
-    res.send(`${subemail.toString()} sent!`);
+    res.send(`message sent!`);
   });
 });
 
