@@ -33,7 +33,7 @@ button.button_1:hover {
 	background-color:#fc8332;
 }
 .highlight {
-	color:#ff6a00;
+  color:#ff6a00;
 }
 
 h1 {
@@ -168,6 +168,12 @@ nav li {
     padding:4px;
     height:25px;
     width:250px;
+}
+
+#newsletter input[type="text"]{
+  padding:4px;
+  height:25px;
+  width:250px;
 }
 
 /* Boxes */
