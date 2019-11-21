@@ -24,7 +24,7 @@ app.use(express.urlencoded());
 
 app.post('/submit-email', (req,res) => {
 	var subemail = req.body.email;
-	var subcontent = req.body.content;
+	var subcontent = req.body.message;
 
 	var sql = `INSERT INTO submittedemails ( id, email,content ) VALUES ( null, '${subemail.toString()}', '${subcontent.toString()}' );`
 	console.log(sql);
